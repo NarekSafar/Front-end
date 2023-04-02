@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@500&family=Fjalla+One&family=Josefin+Sans:wght@600&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    background:radial-gradient(rgb(253, 248, 248),rgb(255, 213, 149));
+}
+
+a{
+    text-decoration: none;
+    color:rgb(17, 17, 17);
+}
+p{
+    color:rgb(95, 94, 94);
+}
+.container{
+    max-width: 85%;
+    margin:auto;
+    padding:10x 20px;
+}
+
+.logo img{
+    width:135px;
+    cursor:pointer;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding:20px;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-right:20px;
+}
+ 
+nav ul li a{
+    position: relative;
+}
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: rgb(248, 138, 35);
+    bottom: 0;
+    left: 0;
+    transition: .35s ease-in-out;
+}
+
+nav ul li:hover a::before{
+    width:100%;
+}
+
+.fa-solid.fa-bag-shopping{
+    font-size:22px;
+    padding-left:5px;
+    cursor:pointer;
+}
+
+.fa-solid.fa-bag-shopping:hover{
+    color:rgb(248, 138, 35);
+}
+
+.row{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.col-2{
+    flex-basis:35%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size:50px;
+    margin: 20px 0;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn{
+    display: inline-block;
+    margin:25px 0;
+    padding:8px 20px;
+    color:rgb(245, 234, 234);
+    background-color: rgb(245, 120, 4);
+    border-radius: 12px;
+    transition: 0.3s ease-in;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background-color: rgb(24, 23, 22);
+}
+
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    flex-basis:30%;
+    min-width: 250px;
+    margin-bottom:20px;
+    transition: .5s;
+}
+
+.col-3:hover{
+    transform:scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 85%;
+    margin:auto;
+    padding: 5px 20px;
+}
+
+.col-4{
+    flex-basis:25%;
+    padding:10px;
+    min-width: 200px;
+    margin-bottom:60px;
+    transition:0.3s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+.title{
+    font-size: 40px;
+    text-align:center;
+    margin: 0 auto 40px;
+    color:rgb(95, 94, 94);
+}
+
+.title:hover{
+    animation:rubberBand 3s infinite;
+    color:rgb(245, 120, 4);
+}
+
+.raiting i{
+    color:rgb(245, 120, 4);
+}
+
+.col-4:hover{
+    transform: translateY(-8px);
+}
+
+/* offer */
+
+.offer{
+    background:radial-gradient(rgb(253, 248, 248),rgb(255, 213, 149));
+    margin-top:80px;
+    padding:30px 0;
+}
+
+.col-2 .img-offer{
+    padding:50px;
+}
+
+/* testimonial */
+
+.testimonial{
+    padding-top:100px;
+}
+
+.testimonial .col-3{
+    text-align:center;
+    padding:40px 20px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+.testimonial .col-3 img{
+    width:50px;
+    margin-top:20px;
+    border-radius:50%;
+}
+
+.fa-solid.fa-quote-left{
+    font-size:34px;
+    color:rgb(245, 120, 4);
+}
+
+.col-3 p{
+    font-size: 12px;
+    margin:12px 0;
+}
+
+.testimonial  .col-3 h3{
+    font-weight:600;
+    margin:15px 0; 
+}
+
+/* brands */
+
+.brands{
+    margin:100px auto;
+}
+
+.col-5{
+    width:160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor:pointer;
+    filter:grayscale(100);
+}
+
+.col-5 img:hover{
+    filter:grayscale(0);
+}
+
+footer{
+    background:rgb(10, 10, 10);
+    color:rgb(238, 233, 233);
+    font-size:15px;
+    padding:60px 0 20px;
+}
+
+footer p{
+    color:rgb(238, 233, 233);
+}
+
+footer h3{
+     color:#fff;
+     margin-bottom:20px; 
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3 ,.footer-col-4{
+    min-width:250px;
+    margin-bottom:20px;
+}
+
+.footer-col-1{
+    flex-basis:30%;
+}
+
+.footer-col-2{
+    flex:1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3 ,.footer-col-4{
+    flex-basis:12%;
+    text-align:center;
+}
+
+ ul{
+    list-style: none;
+}
+
+.app-logo{
+    margin-top:20px;
+}
+
+.app-logo img{
+    width:140px;
+    cursor:pointer;
+    opacity:.8;
+}
+
+.app-logo img:hover{
+    opacity:1;
+}
+footer hr{
+    height: 1px;
+    background:rgb(238, 233, 233) ;
+    margin:20px 0;
+}
+
+.fa-brands{
+    color:rgb(238, 233, 233);
+    margin-right:3px;
+    font-size:13px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+.fa-solid.fa-bars{
+    font-size:22px;
+    margin-left:18px;
+    display:none;
+}
+.fa-solid.fa-bars:hover{
+    color:rgb(245, 120, 4);
+}
+
+
+/* media query for menu  */
+
+@media only screen and (max-width:800px){
+    
+    nav ul{
+       position:absolute;
+       top:70px;
+       left:0;
+       background:#383838;
+       width: 100%;
+       overflow:hidden;
+       transition: .5s;
+    }
+
+    nav ul li{
+        display:block;
+        margin-right:50px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+
+    nav ul li a {
+        color:#fff;
+    }
+
+    .fa-solid.fa-bars{
+        display:block;
+        cursor:pointer;
+    }
+}
+
+
+
+
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+}
+
